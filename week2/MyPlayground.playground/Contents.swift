@@ -10,28 +10,28 @@ import UIKit
 //- eat() is a method of Animal, not global function [revised],global function can use everywhere, methods are functions within custom types(like in class or enum)
 
 //
-//class Animal {
-//
-//    var animal: String
-//    var gender = Gender.self
-//
-//    func eat() {
-//         print("I eat everything!")
-//}
-//
-//
-//    init(animal : String) {
-//        self.animal = animal
-//    }
-//
-//    enum Gender {
-//        case male
-//        case female
-//        case undefined
-//    }
-//
-//}
-//
+class Animal {
+
+    var animal: String
+    var gender = Gender.self
+
+    func eat() {
+         print("I eat everything!")
+}
+
+
+    init(animal : String) {
+        self.animal = animal
+    }
+
+    enum Gender {
+        case male
+        case female
+        case undefined
+    }
+
+}
+
 
 
 //----------------------------------------------------------------------
@@ -40,21 +40,21 @@ import UIKit
 //2. Declare three classes: Elephant, Tiger, Horse that inherits from Animal and override the eat method to print what they usually eat.
 //8/10 you could keep one class Animal for Object-Oriented Q1-Q3.[revised]
 
-//class Elephant : Animal {
-//    override func eat() {
-//        print("I eat durian")
-//    }
-//    }
-//class Tiger : Animal {
-//    override func eat() {
-//        print("I eat deer")
-//    }
-//    }
-//class Horse : Animal {
-//    override func eat() {
-//        print("I eat grass")
-//    }
-//    }
+class Elephant : Animal {
+    override func eat() {
+        print("I eat durian")
+    }
+    }
+class Tiger : Animal {
+    override func eat() {
+        print("I eat deer")
+    }
+    }
+class Horse : Animal {
+    override func eat() {
+        print("I eat grass")
+    }
+    }
 
 
 //----------------------------------------------------------------------
@@ -65,22 +65,22 @@ import UIKit
 //8/10 In playground, you could keep one class Animal for Object-Oriented Q1-Q3.- Please try hard to make the code below work in your playground. Note that tiger, elephant, and horse are instances of class Tiger, Elephant, and Horse, respectively. If you don't know what instances means, please google it.
 
 
-//class Zoo {
-//    var weeklyHot: Animal
-//    init (weeklyHot: Animal ) {
-//        self.weeklyHot = zoo.weeklyHot
-//    }
-//}
-//
-//var tiger = Tiger.self
-//var elephant = Elephant.self
-//var horse = Horse.self
-//
-//
-//let zoo = Zoo(weeklyHot:Tiger(animal: tiger))
-//    zoo.weeklyHot = tiger
-//    zoo.weeklyHot = elephant
-//    zoo.weeklyHot = horse
+class Zoo {
+    var weeklyHot: Animal
+    init (weeklyHot: Animal ) {
+        self.weeklyHot = zoo.weeklyHot
+    }
+}
+
+var tiger = Tiger.self
+var elephant = Elephant.self
+var horse = Horse.self
+
+
+let zoo = Zoo(weeklyHot:Tiger(animal: tiger))
+    zoo.weeklyHot = tiger
+    zoo.weeklyHot = elephant
+    zoo.weeklyHot = horse
 
 
 
@@ -292,14 +292,14 @@ peopleHasCat(name: catsName)
 //------------------
 //● Please create another People instance and use if let to unwrap the pet property.
 
-//var catsName: String?
-//catsName = "Xcode"
-//
-//if let name = catsName {
-//    print("my cat's name is \(name)")
-//} else {
-//    print("I don't recongize")
-//}
+var catsName: String?
+catsName = "Xcode"
+
+if let name = catsName {
+    print("my cat's name is \(name)")
+} else {
+    print("I don't recongize")
+}
 
 
 //----------------------------------------------------------------------
