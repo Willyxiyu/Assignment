@@ -12,25 +12,24 @@ import UIKit
 //
 class Animal {
 
+    var gender: String
     var animal: String
-    var gender = Gender.self
-
-    func eat() {
-         print("I eat everything!")
-}
-
-
-    init(animal : String) {
+    init(gender: String, animal: String) {
+        self.gender = gender
         self.animal = animal
     }
-
+    func eat() {
+        print("I eat everything!")
+    }
+        
+    }
+    
+    
     enum Gender {
         case male
         case female
         case undefined
     }
-
-}
 
 
 
@@ -41,20 +40,32 @@ class Animal {
 //8/10 you could keep one class Animal for Object-Oriented Q1-Q3.[revised]
 
 class Elephant : Animal {
+    init() {
+        super.init(gender: "male", animal: "elephant")
+    }
     override func eat() {
         print("I eat durian")
     }
     }
+
 class Tiger : Animal {
+    init() {
+        super.init(gender: "male", animal: "tiger")
+    }
     override func eat() {
         print("I eat deer")
     }
     }
+
 class Horse : Animal {
+    init() {
+        super.init(gender: "female", animal: "horse")
+    }
     override func eat() {
         print("I eat grass")
     }
     }
+
 
 
 //----------------------------------------------------------------------
@@ -67,22 +78,17 @@ class Horse : Animal {
 
 class Zoo {
     var weeklyHot: Animal
-    init (weeklyHot: Animal ) {
-        self.weeklyHot = zoo.weeklyHot
-    }
+    init (weeklyHot: Animal ) {self.weeklyHot = weeklyHot}
 }
+let tiger = Tiger()
+let elephant = Elephant()
+let horse = Horse()
 
-var tiger = Tiger.self
-var elephant = Elephant.self
-var horse = Horse.self
+let zoo = Zoo(weeklyHot: Tiger())
 
-
-let zoo = Zoo(weeklyHot:Tiger(animal: tiger))
     zoo.weeklyHot = tiger
     zoo.weeklyHot = elephant
     zoo.weeklyHot = horse
-
-
 
 //----------------------------------------------------------------------
 
@@ -262,40 +268,41 @@ enum Gasoline: String {
 //------------------
 //● People would like to have pets,but not everyone could have one. Declare a class Pet with name property and a class People with pet property which will store a Pet instance or nil. Please try to figure out what data type is suitable for these properties in Pet and People.
 
-class Pet {
-    var name: String = ""
-}
-class people {
-    var pet : String?
+    class Pet {
+    let name :String
+    init(name: String ) {self.name = name}
 }
 
-if let catsName =  {
-    print("My cat's name is \(catsName)")
-}
+    class People { }
+    var pet: People?
+    let peopleLikepet: People = People()
+    pet = peopleLikepet
+
+
 //------------------
 //● Please create a People instance and use guard let to unwrap the pet property.
 
-var catsName: String?
-catsName = "Xcode"
 
-func peopleHasCat(name: String?) {
+    func unwrapCat(_ pet: People?){
 
-    guard let name = name else {
-        print("I don't have cat")
+    guard
+        let unwrappedPeople: People = pet
+    else {
+        print("I don't have pet")
         return
     }
 
-    print("My cat's name is \(name)")
+    print(unwrappedPeople)
 }
-peopleHasCat(name: catsName)
+
 
 //------------------
 //● Please create another People instance and use if let to unwrap the pet property.
 
-var catsName: String?
-catsName = "Xcode"
+var name: String?
+name = "Xcode"
 
-if let name = catsName {
+if let name = name {
     print("my cat's name is \(name)")
 } else {
     print("I don't recongize")

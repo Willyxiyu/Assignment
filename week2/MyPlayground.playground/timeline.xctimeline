@@ -3,32 +3,62 @@
    version = "3.0">
    <TimelineItems>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=131&amp;CharacterRangeLoc=2284&amp;EndingColumnNumber=0&amp;EndingLineNumber=84&amp;StartingColumnNumber=22&amp;StartingLineNumber=76&amp;Timestamp=650324263.21022"
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=183&amp;CharacterRangeLoc=2471&amp;EndingColumnNumber=0&amp;EndingLineNumber=91&amp;StartingColumnNumber=0&amp;StartingLineNumber=82&amp;Timestamp=650379856.0110739"
          lockedSize = "{178, 50}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=131&amp;CharacterRangeLoc=2284&amp;EndingColumnNumber=0&amp;EndingLineNumber=84&amp;StartingColumnNumber=22&amp;StartingLineNumber=76&amp;Timestamp=650324263.2105139"
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=183&amp;CharacterRangeLoc=2471&amp;EndingColumnNumber=0&amp;EndingLineNumber=91&amp;StartingColumnNumber=0&amp;StartingLineNumber=82&amp;Timestamp=650379856.011206"
          lockedSize = "{188, 50}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=131&amp;CharacterRangeLoc=2284&amp;EndingColumnNumber=0&amp;EndingLineNumber=84&amp;StartingColumnNumber=22&amp;StartingLineNumber=76&amp;Timestamp=650324263.210593"
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=183&amp;CharacterRangeLoc=2471&amp;EndingColumnNumber=0&amp;EndingLineNumber=91&amp;StartingColumnNumber=0&amp;StartingLineNumber=82&amp;Timestamp=650379856.011295"
          lockedSize = "{178, 50}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=7&amp;CharacterRangeLoc=3360&amp;EndingColumnNumber=10&amp;EndingLineNumber=122&amp;StartingColumnNumber=3&amp;StartingLineNumber=122&amp;Timestamp=650324263.210665"
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=7&amp;CharacterRangeLoc=3598&amp;EndingColumnNumber=10&amp;EndingLineNumber=128&amp;StartingColumnNumber=3&amp;StartingLineNumber=128&amp;Timestamp=650379856.011373"
          lockedSize = "{178, 50}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
       <LoggerValueHistoryTimelineItem
-         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=7&amp;CharacterRangeLoc=3338&amp;EndingColumnNumber=14&amp;EndingLineNumber=121&amp;StartingColumnNumber=7&amp;StartingLineNumber=121&amp;Timestamp=650324263.210734"
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=7&amp;CharacterRangeLoc=3576&amp;EndingColumnNumber=14&amp;EndingLineNumber=127&amp;StartingColumnNumber=7&amp;StartingLineNumber=127&amp;Timestamp=650379856.011441"
          lockedSize = "{175, 50}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=2476&amp;EndingColumnNumber=10&amp;EndingLineNumber=82&amp;StartingColumnNumber=5&amp;StartingLineNumber=82&amp;Timestamp=650379856.011503"
+         lockedSize = "{313, 50}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=8&amp;CharacterRangeLoc=2496&amp;EndingColumnNumber=13&amp;EndingLineNumber=83&amp;StartingColumnNumber=5&amp;StartingLineNumber=83&amp;Timestamp=650379856.011577"
+         lockedSize = "{316, 50}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=5&amp;CharacterRangeLoc=2522&amp;EndingColumnNumber=10&amp;EndingLineNumber=84&amp;StartingColumnNumber=5&amp;StartingLineNumber=84&amp;Timestamp=650379856.0116431"
+         lockedSize = "{315, 50}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=3&amp;CharacterRangeLoc=2543&amp;EndingColumnNumber=8&amp;EndingLineNumber=86&amp;StartingColumnNumber=5&amp;StartingLineNumber=86&amp;Timestamp=650379856.011706"
+         lockedSize = "{316, 50}"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/willy/Desktop/appworks/week2/MyPlayground.playground#CharacterRangeLen=3&amp;CharacterRangeLoc=2578&amp;EndingColumnNumber=8&amp;EndingLineNumber=88&amp;StartingColumnNumber=5&amp;StartingLineNumber=88&amp;Timestamp=650379856.011773"
+         lockedSize = "{260, 50}"
          selectedRepresentationIndex = "0"
          shouldTrackSuperviewWidth = "NO">
       </LoggerValueHistoryTimelineItem>
