@@ -6,7 +6,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var accountTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var checkTextField: UITextField!
+    @IBOutlet weak var checkLabel: UILabel!
     
+    
+    @IBOutlet weak var segmented: UISegmentedControl! {
+        didSet {
+            segmented.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor.white], for: .selected)
+            segmented.setTitleTextAttributes([NSAttributedString.Key.foregroundColor:UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1)], for: .normal)
+        }
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,14 +58,37 @@ class ViewController: UIViewController {
             alert.addAction(action)
             self.present(alert, animated: true, completion: nil)
         }
+        
+        else if accountTextField.text == "appworks_school@gmail.com" && passwordTextField.text == "1234" {
+            let alert = UIAlertController(title: "Correct", message: "Login Successful" , preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
+        
+        else {
+            let alert = UIAlertController(title:  "Error", message: "try again" , preferredStyle: .alert)
+            let action = UIAlertAction(title: "OK", style: .default)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
-    @IBAction func setTitleTextAttributes(_ attributes: [NSAttributedString.Key : Any]?,for state: UIControl.State){
-            let titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-                segmentController.setTitleTextAttributes(titleTextAttributes, for: .normal)
-                segmentController.setTitleTextAttributes(titleTextAttributes, for: .selected)
+    
+    @IBAction func didChangeSegment(_ sender: UISegmentedControl) {
+        if sender.selectedSegmentIndex == 0 {
+            checkTextField.isEnabled = false
+            checkLabel.textColor = UIColor.gray
+            checkTextField.backgroundColor = UIColor.gray
+            
+        } else {
+            checkTextField.isEnabled = true
+            checkLabel.textColor = UIColor.black
+            checkTextField.backgroundColor = UIColor.white
+            }
         }
-}
+        
+        }
 
 extension ViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

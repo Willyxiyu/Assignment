@@ -24,6 +24,7 @@
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="NGJ-F3-qgT">
                                 <rect key="frame" x="120" y="242" width="150" height="32"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="G85-HM-n2v"/>
                                 </constraints>
@@ -34,7 +35,7 @@
                                 <color key="tintColor" systemColor="systemBlueColor"/>
                                 <color key="selectedSegmentTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="setTitleTextAttributes:for:" destination="BYZ-38-t0r" eventType="valueChanged" id="hMN-lW-HV6"/>
+                                    <action selector="didChangeSegment:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ppf-mx-qET"/>
                                 </connections>
                             </segmentedControl>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="Jee-Tg-h9b" userLabel="Content Stack View">
@@ -153,9 +154,10 @@
                     </view>
                     <connections>
                         <outlet property="accountTextField" destination="OVW-8S-ZQG" id="AAc-GT-bpV"/>
+                        <outlet property="checkLabel" destination="OAC-xv-9CH" id="3Tq-JS-P7L"/>
                         <outlet property="checkTextField" destination="hcS-1q-M3Q" id="xTK-e3-8bl"/>
                         <outlet property="passwordTextField" destination="RiP-Y3-a1p" id="HdY-be-a8C"/>
-                        <outlet property="segmentController" destination="NGJ-F3-qgT" id="1at-iX-fTZ"/>
+                        <outlet property="segmented" destination="NGJ-F3-qgT" id="Gwj-C9-QOA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
