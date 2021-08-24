@@ -2,56 +2,53 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    struct StationJSON : Codable {
-        let stationID : String
-        let stationName : String
-        let stationAddress : String
+    struct StationData: Decodable {
+        let stationID: String
+        let stationName: String
+        let stationAddress: String
     }
     
     @IBOutlet weak var stationIDText: UILabel!
     @IBOutlet weak var stationNameText: UILabel!
     @IBOutlet weak var stationAddressText: UILabel!
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadStationItem()
         
+        
+        
+        let url = "https://stations-98a59.firebaseio.com/practice.json"
+        getData(from: url)
     }
     
-    func loadStationItem() {
-        let configuration = URLSessionConfiguration.ephemeral
+    private func getData(from url :String) {
         
-        let session = URLSession(configuration: configuration)
-        
-        let url = URL(string: "https://stations-98a59.firebaseio.com/practice.json")!
-        
-        let task = session.dataTask(with: url) {
+        let task = URLSession.shared.dataTask(with: URL(string: url)!, completionHandler: { data, response, error in
             
-            (data, response, error) in
-            
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200, let data = data else {
+            guard let data = data, error == nil else {
+                print("something went wroung")
                 return
-        }
+            }
+            
+            var result: StationData?
             do {
-        let decofer 
+                result = try JSONDecoder().decode(StationData.self, from: data)
+            }
+            
+            catch {
+                print("failed to convert \(error.localizedDescription)")
+            }
+            
+            guard let json = result else {
+                return
+            }
+            
+            print(json.stationID)
+            print(json.stationName)
+            print(json.stationAddress)
+        })
         
-        
-    }
-
-    let queue = OperationQueue.main
-    queue.addOperation {
-    self.tableView.reloadData()
+        task.resume()
     }
     
-} catch {
-    print("Error info: \(error)")
-}
-    
-}
-
-task.resume()
-
 }
